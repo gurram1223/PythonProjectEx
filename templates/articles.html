@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block home %}
+
+	<h3>Articles</h3>
+	<ul class="list-group">
+	{# {{articles}} #}
+	{% for a in articles %}
+	<li class="list-group-item"><a href="article/{{a.id}}">{{a.title}}</a></li>
+	{% endfor %}
+	</ul>
+{% endblock %}
